@@ -17,6 +17,22 @@
 var Promise = require('bluebird');
 var lib = require('../../lib/advancedChainingLib');
 
+const {ClarifaiStub, grpc} = require("clarifai-nodejs-grpc");
+
+const stub = ClarifaiStub.grpc();
+const metadata = new grpc.Metadata();
+
+metadata.set("authorization", "Key " + lib.clarifaiKey);
+
+
+
+/*   1) get the public profile associated with each handle
+*   2) extract the avatar_url of each profile
+*   4) get the set of concepts for each avatar_url (requires API key)
+*   5) find the intersection of the concepts*/
+
+
+
 // We're using Clarifai's API to recognize concepts in an image into a list of concepts
 // Visit the following url to sign up for a free account
 //     https://developer.clarifai.com/login/
