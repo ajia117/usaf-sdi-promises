@@ -17,6 +17,7 @@
     "chai": "^3.2.0",
     "clarifai": "^2.4.0",
     "colors": "^1.1.2",
+    "eslint": "^7.30.0",
     "eslint-config-hackreactor": "git://github.com/hackreactor-labs/eslint-config-hackreactor",
     "mocha": "^2.2.5",
     "nock": "^2.15.0",

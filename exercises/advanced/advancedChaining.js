@@ -16,6 +16,8 @@
 
 var Promise = require('bluebird');
 var lib = require('../../lib/advancedChainingLib');
+/*
+var GitHub = require('github-api');
 
 const {ClarifaiStub, grpc} = require("clarifai-nodejs-grpc");
 
